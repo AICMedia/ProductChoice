@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Подбор продукта</title>
+		<meta name="description" content="Подбор продукта" />
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		
+		<script src="js/modernizr.custom.js"></script>
+		<script type='text/javascript' src='js/jquery-2.1.1.min.js'></script>
+		<link href="css/jquery.formstyler.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/jquery.formstyler.js"></script>	
+		<script src="demo.js"></script>
+
+	</head>
+	<body>
+		<header>
+			<div class="m-back-header"><div class="row-section">
+				<h2>Подбор продукта</h2>	
+			</div></div>
+		</header>
+		<div class="container">
+			<form class="b-form">
+				<div class="b-m-row"><div class="row-section"><h2>Информация для подбора продукта</h2><div class="accordeon"></div></div></div>
+				<div class="section accordeon">
+						
+						<div class="label-group-2 maxheight">
+						<label for="region">Регион</label>
+						<select id="region" name="region" data-placeholder="Выберите вариант">
+							<option></option>
+							<option>Республика Адыгея</option>
+	  						<option>Республика Башкортостан</option>
+	  						<option>Республика Бурятия</option>
+	  						<option>Алтайский край</option>
+	  						<option>Амурская область</option>
+	  						<option>Архангельская область</option>
+	  						<option>Астраханская область</option>
+	  						<option>Белгородская область</option>
+							<option>Пункт 1</option>
+							<option>Пункт 2</option>
+							<option>Пункт 3</option>
+							<option>Пункт 4</option>
+							<option>Пункт 5</option>
+						</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="credit-type">Тип кредитования</label>
+						<select id="credit-type" name="credit-type" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Наличными" >Наличными</option>
+	  						<option value="На банковскую карту" >На банковскую карту</option>
+	  						<option value="Кредитная линия">Кредитная линия</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="reason">Цель кредита</label>
+	  					<select id="reason" name="reason" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Ипотека" >Ипотека</option>
+	  						<option value="Автомобильный кредит">Автомобильный кредит</option>
+	  						<option value="Кредит на образование">Кредит на образование</option>
+	  						<option value="Кредит на земельный участок">Кредит на земельный участок</option>
+	  						<option value="Другое">Другое</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="currency">Валюта</label>
+	  					<select id="currency" name="currency" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Рубли" >Рубли</option>
+	  						<option value="Доллары США">Доллары США</option>
+	  						<option value="Евро">Евро</option>
+	  						<option value="Юани">Юани</option>
+	  						<option value="Другое">Другое</option>
+	  					</select>
+	  					</div>
+	  				
+
+		  				<div class="label-group-1">
+		  					<label for="client-category">Категория клиента</label>
+		  					<select id="client-category" name="client-category" class="turnintodropdown">
+		  						<option value="" selected>Выберите вариант</option>
+		  						<option value="Физическое лицо" >Физическое лицо</option>
+		  						<option value="Юридическое лицо">Юридическое лицо</option>
+		  					</select>
+		  				</div>
+
+	  				
+	  					<div class="label-group-2">
+	  					<label for="pay-type">Тип платежа</label>
+	  					<select id="pay-type" name="pay-type" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="1" >1</option>
+	  						<option value="2">2</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="duty-payment">Погашение основного долга</label>
+	  					<select id="duty-payment" name="duty-payment" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="1" >1</option>
+	  						<option value="2">2</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="interest-payment">Погашение процентов</label>
+	  					<select id="interest-payment" name="interest-payment" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Физическое лицо" >Аннуитетный</option>
+	  						<option value="Юридическое лицо">Дифференцированный</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+						<label for="sex">Пол заёмщика</label>
+	  					<select id="sex" name="sex" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Мужской" >Мужской</option>
+	  						<option value="Женский">Женский</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="birthday">Дата рождения</label>
+	  					<input type="date" id="birthday" name="birthday" placeholder="ДД.ММ.ГГ">
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<div class="radiogroup salary-type"><label>Клиент получает заработную плату на карт/счет в Банке</label>&nbsp;<label class="salary-type no">Нет <span class="radio_btn"></span></label>&nbsp;<label class="salary-type yes">Да <span class="radio_btn"></span></label></div>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<div class="radiogroup soldier"><label>Клиент является военнослужащим</label>&nbsp;<label class="soldier no">Нет <span class="radio_btn"></span></label>&nbsp;<label class="soldier yes">Да <span class="radio_btn"></span></label></div>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<div class="radiogroup nis-program"><label>Участвует в программе НИС</label>&nbsp;<label class="nis-program no">Нет <span class="radio_btn"></span></label>&nbsp;<label class="nis-program yes">Да <span class="radio_btn"></span></label></div>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="share">Акция</label>
+	  					<select id="share" name="share" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="1" >1</option>
+	  						<option value="2">2</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="income">Ежемесячные доходы</label>
+	  					<input type="text" name="income" id="income" />
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="dependant">Количество иждевенцев</label>
+	  					<input type="text" name="dependant" id="dependant" />
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="duty-payment">Образование</label>
+	  					<select id="duty-payment" name="duty-payment" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Среднее" >Среднее</option>
+	  						<option value="Среднее специальное">Среднее специальное</option>
+	  						<option value="Неполное высшее" >Неполное высшее</option>
+	  						<option value="Высшее" >Высшее</option>
+	  					</select>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<div class="radiogroup notstandart_order"><label for="notstandart_order">Нестандартная заявка</label>&nbsp;<label  class="notstandart_order no">Нет <span class="radio_btn"></span></label>&nbsp;<label class="notstandart_order yes">Да <span class="radio_btn"></span></label></div>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<div class="radiogroup insurance-agreement"><label>Согласие на страхование</label>&nbsp;<label class="insurance-agreement no">Нет <span class="radio_btn"></span></label>&nbsp;<label  class="insurance-agreement yes">Да <span class="radio_btn"></span></label></div>
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<label for="payment-date">Планируемая дата погашения</label>
+	  					<input type="date" id="payment-date" name="payment-date" placeholder="ДД.ММ.ГГ">
+	  					</div>
+
+	  					<div class="label-group-2">
+	  					<div class="radiogroup client-premium"><label>Клиент премиум</label>&nbsp;<label class="client-premium no">Нет <span class="radio_btn"></span></label>&nbsp;<label class="client-premium yes">Да <span class="radio_btn"></span></label></div>
+	  					</div>
+	
+	  			</div>
+				
+	  			<div class="b-m-row no-pointer"><div class="row-section"><h2>Добавление обязательств клиента</h2><div class="accordeon"></div></div></div>
+  				<div class="section accordeon">
+  					<div class="label-group-1">
+  					<label for="obligations">Тип обязательства</label>
+  					<select id="obligationsmain" name="obligations" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+  					<div class="b-submit-wrap"><input class="obligation b-submit add" type="button" value="Добавить" data-choice="obligation"/></div>
+  				</div>
+
+  				<div class="group-wrapper obligation" data-select="obligation">
+  				<div class="row">
+  				<div class="b-m-row obligations"><div class="row-section"><h2>Обязательства</h2><div class="accordeon"></div></div></div>
+  					<div class="section accordeon obligation">
+
+	  				
+						
+							<div class="label-group-3">
+		  					<label for="obligations-type">Тип обязательства</label>
+			  					<select name="obligations-type" class="turnintodropdown">
+			  						<option value="" selected>Выберите вариант</option>
+			  						<option value="Вариант_1" >Вариант_1</option>
+			  						<option value="Вариант_2">Вариант_2</option>
+			  						<option value="Вариант_3">Вариант_3</option>
+			  						<option value="Вариант_4">Вариант_4</option>
+			  					</select>
+		  					</div>
+
+		  					<div class="label-group-3">
+		  					<label for="obligations-sum">Сумма ежемесячного обязательсвта</label>
+		  					<select  name="obligations-sum" class="turnintodropdown">
+		  						<option value="" selected>Выберите вариант</option>
+		  						<option value="Вариант_1" >Вариант_1</option>
+		  						<option value="Вариант_2">Вариант_2</option>
+		  						<option value="Вариант_3">Вариант_3</option>
+		  						<option value="Вариант_4">Вариант_4</option>
+		  					</select>
+		  					</div>
+
+		  					<div class="label-group-3">
+		  					<label for="obligations-currency">Валюта</label>
+		  					<select name="obligations-currency" class="turnintodropdown">
+		  						<option value="" selected>Выберите вариант</option>
+		  						<option value="Вариант_1" >Вариант_1</option>
+		  						<option value="Вариант_2">Вариант_2</option>
+		  						<option value="Вариант_3">Вариант_3</option>
+		  						<option value="Вариант_4">Вариант_4</option>
+		  					</select>
+		  					</div>
+		  					<div class="b-submit-wrap"><input class="obligation b-submit delete" type="button" data-choice="obligation" value="Удалить" /></div>
+						</div>	
+
+	  				</div>
+
+	  				
+
+  				</div>
+
+  				<div class="b-m-row"><div class="row-section"><h2>Поиск организации работодателя</h2></div></div>
+  				<div class="section">
+
+  				 	<div class="label-group-3">
+  					<label for="INN">ИНН Организации</label>
+  					<input type="date" id="INN" name="INN">
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="OGRN">ОГРН</label>
+  					<input type="date" id="OGRN" name="OGRN">
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="KPP">КПП</label>
+  					<input type="date" id="KPP" name="KPP">
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="org-name">Наименование организации</label>
+  					<input type="date" id="org-name" name="org-name">
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="region">Регион фактического адреса</label>
+  					<select id="region" name="region" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="b-submit-wrap"><input class="b-submit find" type="submit" value="Найти" /></div>
+
+  				</div>
+
+  				<div class="b-m-row"><div class="row-section"><h2>Информация о работодателе</h2><div class="accordeon"></div></div></div>
+  				<div id="employer" class="section accordeon">
+  					<div class="label-group-2">
+  					<label for="org-name">Наименование организации</label>
+  					<input type="date" id="org-name" name="org-name">
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="region">Краткое наименование организации</label>
+  					<select id="region" name="region" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="INN">ИНН Организации</label>
+  					<input type="date" id="INN" name="INN">
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="OGRN">ОГРН Организации</label>
+  					<input type="date" id="OGRN" name="OGRN">
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="KPP">КПП Организации</label>
+  					<input type="date" id="KPP" name="KPP">
+  					</div>
+
+  					<div class="label-group-1">
+  					<label for="of-address">Юридический адрес</label>
+  					<input type="date" id="of-address" name="of-address">
+  					</div>
+
+  					<div class="label-group-1">
+  					<label for="real-address">Фактический адрес</label>
+  					<input type="date" id="real-address" name="real-address">
+  					</div>
+
+  					<div class="label-group-1">
+  					<label for="industry">Отрасль по данным CRM</label>
+  					<input type="date" id="industry" name="industry">
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="payment-date">Планируемая дата погашения</label>
+	  					<input type="date" id="payment-date" name="payment-date" placeholder="ДД.ММ.ГГ">
+  					</div>
+
+  					<div class="label-group-2">
+  					<div class="radiogroup budgetary"><label>Бюджетная организация</label>&nbsp;<label class="budgetary no">Нет <span class="radio_btn"></span></label>&nbsp;<label class="budgetary yes">Да <span class="radio_btn"></span></label></div>
+  					</div>
+
+  					<div class="b-submit-wrap"><input class="b-submit find" type="button" value="Найти" /><input class="b-submit delete del" type="button" value="Удалить" /></div>
+
+  				</div>
+
+  				<div class="b-m-row no-pointer"><div class="row-section"><h2>Категория клиента</h2></div></div>
+  				<div class="section">
+
+  					<div class="label-group-2">
+  					<label for="client-category">Категория клиента</label>
+  					<select id="client-category" name="client-category" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="client-subcategory">Субкатегория клиента</label>
+  					<select id="client-subcategory" name="client-subcategory" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="b-submit-wrap"><input class="b-submit find" type="submit" value="Найти" /></div>
+
+  				</div>
+
+  				<div class="b-m-row"><div class="row-section"><h2>Параметры рефинансируемого кредита</h2><div class="accordeon"></div></div></div>
+  				<div class="section accordeon">
+
+  					<div class="label-group-2">
+  					<label for="credit-org-name">Наименование кредитной организации</label>
+  					<select id="credit-org-name" name="credit-org-name" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="BIK">БИК</label>
+	  					<input type="text" id="BIK" name="BIK">
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="contract-date">Дата заключения договора</label>
+	  					<input type="date" id="contract-date" name="contract-date" placeholder="ДД.ММ.ГГ">
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="contract-end-date">Дата окончания договора</label>
+	  					<input type="date" id="contract-end-date" name="contract-end-date" placeholder="ДД.ММ.ГГ">
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="INN">Сумма остатка долга</label>
+  					<input type="date" id="INN" name="INN">
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="OGRN">Сумма кредита</label>
+  					<input type="date" id="OGRN" name="OGRN">
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="currency">Валюта</label>
+	  					<select id="currency" name="currency" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Рубли" >Рубли</option>
+	  						<option value="Доллары США">Доллары США</option>
+	  						<option value="Евро">Евро</option>
+	  						<option value="Юани">Юани</option>
+	  						<option value="Другое">Другое</option>
+	  					</select>
+  					</div>
+
+  					<div class="b-submit-wrap"><input class="b-submit find" type="submit" value="Найти" /></div>
+  				</div>
+
+
+  				<div class="b-m-row"><div class="row-section"><h2>Новый участник сделки</h2><div class="accordeon"></div></div></div>
+  				<div class="section accordeon">
+
+  					<div class="label-group-2">
+  					<label for="transaction-person-type">Тип участника сделки</label>
+  					<select id="transaction-person-type" name="transaction-person-type" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="transaction-person-sex">Пол</label>
+	  					<select id="transaction-person-sex" name="transaction-person-sex" class="turnintodropdown">
+	  						<option value="" selected>Выберите вариант</option>
+	  						<option value="Мужской" >Мужской</option>
+	  						<option value="Женский">Женский</option>
+	  					</select>
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="transaction-person-birthday"> Дата рождения</label>
+	  					<input type="date" id="transaction-person-birthday" name="transaction-person-birthday" placeholder="ДД.ММ.ГГ">
+  					</div>
+
+  					<div class="label-group-2">
+  					<label for="transaction-person-income">Ежемесячные доходы</label>
+	  					<input type="text" name="transaction-person-income" id="transaction-person-income" />
+  					</div>
+
+  					<div class="label-group-2">
+  					<div class="radiogroup sum_income"><label>Указывать в качестве совокупного дохода</label>&nbsp;<label class="sum_income no">Нет <span class="radio_btn"></span></label>&nbsp;<label class="sum_income yes">Да <span class="radio_btn"></span></label></div>
+  					</div>
+
+  					<div class="b-submit-wrap"><input class="b-submit find" type="submit" value="Добавить" /></div>
+  				</div>
+
+  				<div class="b-m-row no-pointer"><div class="row-section"><h2>Добавление обязательств участника сделки</h2></div></div>
+  				<div class="section">
+  					<div class="label-group-1">
+  					<label for="transaction-obligations">Тип обязательства</label>
+  					<select id="transaction-obligations" name="transaction-obligations">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+  					<div class="b-submit-wrap"><input class="b-submit add" type="button" value="Добавить" data-choice="transaction"/></div>
+  				</div>
+
+  				<div class="group-wrapper" data-select="transaction">
+  					<div class="row">
+  					<div class="b-m-row obligations"><div class="row-section"><h2>Обязательства участника сделки</h2><div class="accordeon"></div></div></div>
+  				<div class="section accordeon">
+  					
+  				 	<div class="label-group-3">
+  					<label for="transaction-obligations-type">Тип обязательства</label>
+  					<select id="transaction-obligations-type" name="transaction-obligations-type" >
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="transaction-obligations-sum">Сумма ежемесячного обязательсвта</label>
+  					<select id="transaction-obligations-sum" name="transaction-obligations-sum" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="transaction-obligations-currency">Валюта</label>
+  					<select id="transaction-obligations-currency" name="transaction-obligations-currency" class="turnintodropdown">
+  						<option value="" selected>Выберите вариант</option>
+  						<option value="Вариант_1" >Вариант_1</option>
+  						<option value="Вариант_2">Вариант_2</option>
+  						<option value="Вариант_3">Вариант_3</option>
+  						<option value="Вариант_4">Вариант_4</option>
+  					</select>
+  					
+  					</div>
+  					<div class="b-submit-wrap"><input class="b-submit delete" type="button" value="Удалить" data-choice="transaction"/>
+  					
+  				</div>
+  					</div>
+  					</div>
+  				</div>
+
+  				<div class="b-m-row"><div class="row-section"><h2>Запрашиваемые параметры кредита</h2><div class="accordeon"></div></div></div>
+  				<div class="section accordeon">
+
+  					<div class="label-group-3">
+  					<label for="wanted-credit-sum">Желаемая сумма кредита</label>
+	  					<input type="text" name="wanted-credit-sum" id="wanted-credit-sum" />
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="wanted-credit-period">Желаемая сумма кредита</label>
+	  					<input type="text" name="wanted-credit-period" id="wanted-credit-period" />
+  					</div>
+
+  					<div class="label-group-3">
+  					<label for="wanted-month-payment">Желаемая сумма кредита</label>
+	  					<input type="text" name="wanted-month-payment" id="wanted-month-payment"/>
+  					</div>
+  				</div>
+
+  				<div class="b-m-row"><div class="row-section"><h2>Кредитные предложения</h2></div></div>
+  				<div class="b-m-row table-height"><div class="row-section">
+  					<table class="head">
+  						<tr >
+  							<td class="long">Наименование кредитной программы</td>
+  							<td class="short">%, ставка</td>
+  							<td class="medium">Сумма кредита, руб</td>
+  							<td class="medium">Ежемесячный платеж, руб</td>
+  							<td class="m-long">Сумма комиссии за присоединение к КДС</td>
+  						</tr>
+  					</table>
+  				</div></div>
+  				<div class="section table-height">
+  					<table>
+  						<tr >
+  							<td class="long">Наименование кредитной программы</td>
+  							<td class="short">12</td>
+  							<td class="medium">100 000.00</td>
+  							<td class="medium">2348.00</td>
+  							<td class="m-long">700</td>
+
+  						</tr>
+  					</table><input class="b-submit get" type="submit" value="Выбрать" />
+  					<table>
+  						<tr>
+  							<td><p>Забрать для сравнения</p></td>
+  							<td><p>Сформировать предварительный график</p></td>
+  							<td><p>Сформировать предварительные параметры предложения</p></td>
+  						</tr>	
+  					</table>
+  				</div>
+  				<div class="section table-height">
+  					<table>
+  						<tr >
+  							<td class="long">Наименование кредитной программы</td>
+  							<td class="short">18</td>
+  							<td class="medium">70 000.00</td>
+  							<td class="medium">1746.00</td>
+  							<td class="m-long">500</td>
+  						</tr>
+  					</table>
+  					</table><input class="b-submit get" type="submit" value="Выбрать" />
+  					<table>
+  						<tr>
+  							<td><p>Забрать для сравнения</p></td>
+  							<td><p>Сформировать предварительный график</p></td>
+  							<td><p>Сформировать предварительные параметры предложения</p></td>
+  						</tr>	
+  					</table>
+  				</div>
+
+
+
+			</form>
+	
+		</div>
+		<script type='text/javascript' src='js/mask.input.js'></script>
+	<!--	<script type='text/javascript' src='js/select.js'></script> -->
+		<script>
+		$(document).ready(function(){
+
+			$('input, select').styler();
+		   // $('select').selecter();
+		   $("#birthday").mask("99.99.99",{placeholder:"ДД.ММ.ГГ"});
+		   $("#dependant").mask("99",{placeholder:"01"});
+
+		   $(".radio_btn").click(function(){
+		   		if ($(this).parent().hasClass("no")){
+		   			parent = $(this).parent().removeClass("no").attr("class");
+		   			$(this).parent().addClass("no");
+		   			p = ".radiogroup."+parent;
+		   			$(p).find(".radio_btn").removeClass("active");
+		   			$(this).addClass("active");
+		   		} else {
+		   			parent = $(this).parent().removeClass("yes").attr("class");
+		   			$(this).parent().addClass("yes");
+		   			p = ".radiogroup."+parent;
+		   			$(p).find(".radio_btn").removeClass("active");
+		   			$(this).addClass("active");
+		   		}
+		   			
+			});
+
+		   $("div.accordeon:not(.section)").click(function(){
+		   	if ($(this).is(".active")){
+		   		$(this).css("background","url(images/round_pointer.png) center no-repeat");
+		   		$(this).removeClass("active");
+
+		   	} else {
+		   		$(this).css("background" , "url(images/round_pointer_up.png) center no-repeat");
+		   		$(this).addClass("active");
+		    }
+		   		param = $(this).parent(".row-section").parent();
+		   		$(param).next(".section.accordeon").slideToggle("slow");
+		   });
+
+		   i=1;
+		   $(".add").on('click', function(){
+		   		if(!!$(this).attr('data-choice')){
+		   			var attr = $(this).attr('data-choice');
+		   			$('[data-select='+attr+'] select').styler('destroy');
+		   			var clone = $('[data-select='+attr+"] .row:not(.cloned)").clone().addClass('cloned'+i);
+		   			
+		   			clone.appendTo('[data-select='+attr+']');
+		   			clone.find('.delete').attr('id',"cloned"+i);
+					i=i+1;
+
+		   			$('[data-select='+attr+'] select').styler().trigger('refresh');
+		   			
+		   		}
+		   });
+
+		   $("body").on('click',".delete",function(){
+		   		if(!!$(this).attr('data-choice')){
+		   			var att = $(this).attr('id');
+		   			$(".row."+att).remove();
+		   			
+		   		}
+
+		   });
+			
+		   $("body").on("click", ".del", function(){
+		    $("#employer input").not('.b-submit').val("");
+			});
+
+		   
+		});
+		</script>
+	</body>
+</html>

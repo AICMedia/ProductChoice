@@ -1,0 +1,351 @@
+@font-face{
+	font-family: HelveticaNeue;
+	src:url("../fonts/HelveticaNeueLight.otf");
+}
+@font-face{
+	font-family: HelveticaNeueMedium;
+	src:url("../fonts/HelveticaNeueMedium.otf");
+}
+@font-face{
+	font-family: HelveticaNeueBold;
+	src:url("../fonts/HelveticaNeueBold.otf");
+}
+
+h1, h2, h3, p, a{
+	font-family: HelveticaNeue;
+	color: #000;
+}
+
+table{
+	color:#000;
+	float:left;
+	margin-left: 25px;
+}
+
+table.head{
+	opacity:0.6;
+	background:#fff;
+	margin-left: -5px;
+	margin-top: 13px;
+}
+
+td{
+	padding:0 17px 0 3px;
+	font-size:12px;
+}
+
+td.long{
+	width:230px;
+}
+
+
+td.short{
+	width:85px;
+}
+
+td.medium{
+	width:120px;
+}
+
+td.m-long{
+	width:190px;
+}
+
+td p{
+	color:#4f7094;
+	padding-top:10px;
+}
+
+.section{
+	padding:0 30px 40px;
+	width:1000px;
+	margin: 0 auto;
+	overflow:hidden;
+}
+
+.group-wrapper{
+	overflow:visible;
+}
+
+/*Стилизация RADIOBUTTON*/
+.b-form input[type=radio]{
+    display:none;
+    margin-right: 5px;
+}
+
+.radio_btn{
+    display:inline-block;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background:url('../images/radio.png') left top no-repeat;
+    cursor: pointer;
+}
+
+.radio_btn.active{
+    background:url('../images/radioactive.png') left top no-repeat;
+}
+
+.radiogroup{
+	width:100%;
+	overflow:hidden;
+	padding-top:30px;
+	min-height: 110px;
+}
+
+.radiogroup label{
+	float:left;
+	max-width: 45%;
+	min-height:50px;
+	margin-right: 25px;
+}
+.radiogroup label.yes,.radiogroup label.no{
+	float:right;
+}
+
+.radiogroup label.yes:after, .radiogroup label.no:after{
+	content:"";
+}
+
+/*КОнец стилизации RADIOBUTTON*/
+.m-back-header{
+	height:65px;
+	background-color:#284a66;
+	overflow: hidden;
+	position:relative;
+}
+
+.m-back-header h2{
+	font-family:HelveticaNeueMedium;
+	color:#fff;
+	font-size: 14px;
+	line-height: 40px;
+}
+
+.b-form {
+	position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.b-form:before, 
+.b-form:after { 
+	content: " "; display: table; 
+}
+
+.b-form:after { 
+	clear: both; 
+}
+
+.b-column {
+	width: 50%;
+	padding: 0px 15px;
+	float: left;
+	overflow:hidden;
+}
+
+.b-m-row {
+	width: 100%;
+	padding: 0px;
+	overflow:hidden;
+	height:66px;
+	position:relative;
+	border-top:2px solid #eee;
+	border-bottom:2px solid #eee;
+	background:#fff;
+}
+
+.section.table-height{
+	padding: 15px 55px 15px 15px;
+	height: auto;
+}
+.row-section{
+	overflow:hidden;
+	position:relative;
+	width:908px;
+	margin:0 auto;
+}
+
+.b-m-row div.accordeon{
+	position:absolute;
+	background:url("../images/round_pointer.png") center no-repeat;
+	right:-10px;
+	top:0;
+	height:66px;
+	width:66px;
+}
+
+.section.accordeon{
+	display:block;
+}
+.group-wrapper{
+	overflow:visible;
+	height:auto;
+	position:relative;
+}
+
+.b-m-row h2{
+	font-family:HelveticaNeueBold;
+	font-size:16px;
+	color:#4f7094;
+	text-transform:uppercase;
+	line-height: 35px;
+}
+
+.b-row {
+	width: 100%;
+	padding: 0px 15px;
+	overflow:hidden;
+}
+
+.b-form label {
+	display: block;
+	padding: 30px 5px 10px 2px;
+	font-size: 14px;
+	cursor: pointer;
+	color: #000;
+}
+.b-form label:after {
+	content:"*";
+	color:#284a66;
+}
+
+.label-group-3{
+	width:33.333%;
+	padding: 0 15px;
+	float:left;
+}
+
+.label-group-2{
+	width:50%;
+	padding: 0 15px;
+	float:left;
+}
+
+.label-group-1{
+	width:100%;
+	padding: 0 15px;
+	float:left;
+}
+
+.b-form input,
+.b-form select,
+.b-form textarea {
+	font-size: 14px;
+	padding: 5px 10px;
+	display: block;
+	width: 100%;
+	border: 1px solid #eee;
+	border-radius: 3px;
+	background-color: #fff;
+	color:#000;
+	line-height: 32px;
+	height: 52px;
+}
+#employer input:not(.b-submit),
+#employer select,
+#employer .jq-selectbox__select{
+	background:#eff3f7;
+}
+
+.b-form textarea {
+	min-height: 200px;
+}
+
+.b-form input:focus,
+.b-form textarea:focus,
+.b-form select:focus,
+.b-form label:active + input,
+.b-form label:active + textarea,
+.b-form label:active + select {
+	outline: none;
+	border: 1px solid #284a66;
+}
+
+::-webkit-input-placeholder,
+::-webkit-select-placeholder { /* WebKit browsers */
+    color: #676;
+}
+
+:-moz-placeholder, { /* Mozilla Firefox 4 to 18 */
+    color: #676;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #676;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #676;
+}
+
+.b-submit-wrap {
+	padding: 40px 15px 0;
+	clear: both;
+}
+
+.b-form input.b-submit {
+	font-family: HelveticaNeue;
+	background: #4f7094;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	display: inline-block;
+	padding: 0px 30px;
+	font-size: 14px;
+	border-radius: 3px;
+}
+
+.b-form input.b-submit:hover {
+	background: #1478b1;
+}
+
+.b-form input.b-submit.get{
+	float:right;
+	height:auto;
+	padding:0 15px;
+}
+
+.b-form input.b-submit.find{
+	background:#4f7094 url(../images/finder.png) left no-repeat;
+	background-position: 15px;
+	padding: 0px 20px 0 40px;
+	margin-right:30px;
+}
+
+.b-form input.b-submit.find:hover{
+	background:#1478b1 url(../images/finder.png) left no-repeat;
+	background-position: 15px;
+}
+
+.b-form input.b-submit.delete{
+	background:transparent url(../images/round-cross.png) left no-repeat;
+	background-position: -10px;
+	color:#4f7094;
+	padding: 0px 20px 0 40px;
+}
+
+.b-form input.b-submit.delete:hover{
+	background:transparent url(../images/round-cross.png) left no-repeat;
+	background-position: -10px;
+	color:#1478b1;
+}
+
+
+
+@media screen and (max-width: 70em) {
+	.b-column {
+		width: 50%;
+	}
+	.b-column:nth-child(3) {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 48em) {
+	.b-column {
+		width: 100%;
+		padding: 10px;
+	}
+}
+
